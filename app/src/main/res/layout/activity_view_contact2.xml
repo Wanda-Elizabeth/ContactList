@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewContactActivity">
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="131dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_sharp_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvname1"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="183dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplay"
+        tools:text="name_one" />
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_baseline_call_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname1" />
+
+    <ImageView
+        android:id="@+id/imgMessage"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="56dp"
+        android:src="@drawable/ic_baseline_message_24"
+        app:layout_constraintStart_toEndOf="@+id/imgPic"
+        app:layout_constraintTop_toTopOf="@+id/imgPic" />
+
+    <TextView
+        android:id="@+id/tvPhonenum"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="44dp"
+        tools:text="contact_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMessage" />
+
+    <ImageView
+        android:id="@+id/imgVideo"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="83dp"
+        android:src="@drawable/ic_baseline_videocam_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgMessage"
+        app:layout_constraintTop_toBottomOf="@+id/tvname1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_baseline_call_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPhonenum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPhonenum" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEmaill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvEmaill" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        tools:text="location_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmaill" />
+
+    <ImageView
+        android:id="@+id/imgLocation1"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_baseline_location_on_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLocation" />
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmaill"
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhonenum"
+        tools:text="email_one" />
+</androidx.constraintlayout.widget.ConstraintLayout>
